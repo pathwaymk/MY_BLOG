@@ -20,8 +20,8 @@ class CreateRegisterForm(FlaskForm):
 
 
 class CreateLoginForm(FlaskForm):
-    email = StringField("Email", validators=[DataRequired()])
-    password = StringField("Password", validators=[DataRequired(), Email()])
+    email = StringField("Email", validators=[DataRequired(), Email()])
+    password = StringField("Password", validators=[DataRequired()])
     submit = SubmitField("Submit")
 
 
